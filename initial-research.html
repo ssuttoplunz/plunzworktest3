@@ -317,8 +317,8 @@ img {vertical-align: middle;}
       <div class="text">Mapping Vulnerability</div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1,slideshow2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
     
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
@@ -412,7 +412,10 @@ img {vertical-align: middle;}
 
 <hr/>
 
+<!--SLIDESHOW SETTINGS-->
+
 <script>
+
 var slideshow1 = document.getElementById("slideshow1");
 slideshow1.currentSlideIndex = 1;
 showSlides(slideshow1.currentSlideIndex, slideshow1);
@@ -422,12 +425,9 @@ slideshow2.currentSlideIndex = 1;
 showSlides(slideshow2.currentSlideIndex, slideshow2);
 
 var slideshow3 = document.getElementById("slideshow3");
-slideshow2.currentSlideIndex = 1;
+slideshow3.currentSlideIndex = 1;
 showSlides(slideshow3.currentSlideIndex, slideshow3);
 
-var slideshow4 = document.getElementById("slideshow4");
-slideshow2.currentSlideIndex = 1;
-showSlides(slideshow4.currentSlideIndex, slideshow4);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
@@ -438,21 +438,25 @@ function currentSlide(n, slideshow) {
 }
 
 function showSlides(n, slideshow) {
+  
 
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+
+
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
