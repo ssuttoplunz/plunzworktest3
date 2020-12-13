@@ -371,13 +371,51 @@ img {vertical-align: middle;}
 </div>
 <br>
 
-  <h3>Most Vulnerable Counties</h3>
+  <h3>County Analysis at Census Tract</h3>
 
   <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation 
     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor 
     in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
     vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore 
     te feugait nulla facilisi.</p>
+
+
+
+<!--SLIDESHOW-->
+
+<div id="slideshow4" class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/research/county_tract_grid_maps-09.jpg" style="width:100%">
+    <div class="text">Mapping Vulnerability</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/research/county_tract_grid_maps-06.jpg" style="width:100%">
+    <div class="text">Mapping Vulnerability</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/research/county_tract_grid_maps-05.jpg" style="width:100%">
+    <div class="text">Mapping Vulnerability</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1,slideshow4)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, slideshow4)"></span> 
+    <span class="dot" onclick="currentSlide(2, slideshow4)"></span> 
+    <span class="dot" onclick="currentSlide(3, slideshow4)"></span> 
+  </div>
+</div>
+<br>
+
+
+
 
     <img src="img/research/County_Grid-01.jpg" alt="Nature" class="responsive" width="600" height="400">
 
@@ -415,6 +453,9 @@ var slideshow3 = document.getElementById("slideshow3");
 slideshow3.currentSlideIndex = 1;
 showSlides(slideshow3.currentSlideIndex, slideshow3);
 
+var slideshow4 = document.getElementById("slideshow4");
+slideshow4.currentSlideIndex = 1;
+showSlides(slideshow4.currentSlideIndex, slideshow4);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
