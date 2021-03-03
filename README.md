@@ -1,14 +1,8 @@
-# Creative Theme for Jekyll
+# Staying Power
+##### By Sarah Zamler & Nelson De Jesus Ubri
+##### Networks of Care Studio - Fall 2020
+##### Intructor: Laura Kurgan, GSAPP
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+Staying Power is a toolkit of research and proposals aimed at fostering a network of care to both prevent evictions and empower tenants who are in the process of being evicted. The project analyzes systems of eviction before and during the COVID-19 pandemic and uses nationwide health data to identify areas of extreme vulnerability. Building on this research, the toolkit is a set of interconnecting proposals designed specifically for the Bronx, addressing the eviction system at multiple leverage points using existing networks of care and a proposed team of Community Health Workers.
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
-
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
-
-## To use the Creative Theme template in your project
-
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
-
+##### Page Link: https://nd2584.github.io/staying_power_2020/
