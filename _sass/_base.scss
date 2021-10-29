@@ -47,7 +47,7 @@ p {
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+    background-color: $theme-light;
     color: white;
 }
 
@@ -286,7 +286,7 @@ header {
 
 // Bootstrap Overrides
 .text-primary {
-    color: $theme-primary;
+    color: rgb(0, 0, 0);
 }
 
 .no-gutter > [class*='col-'] {
