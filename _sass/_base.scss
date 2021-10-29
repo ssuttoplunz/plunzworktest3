@@ -157,7 +157,7 @@ header {
     background-position: center;
     background-image: url('../img/white_background.png');
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     .header-content {
         position: relative;
         text-align: center;
@@ -175,7 +175,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: rgba(rgb(0, 0, 0), .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
