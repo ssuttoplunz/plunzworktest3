@@ -43,16 +43,16 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: $theme-light;
 }
 
 .bg-dark {
     background-color: $theme-light;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba(rgb(121, 121, 121), .7);
 }
 
 section {
