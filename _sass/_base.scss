@@ -175,7 +175,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(rgb(0, 0, 0), .7);
+                color: rgba(rgb(255, 255, 255), .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -228,7 +228,7 @@ header {
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         opacity: 0;
         display: block;
         background: rgba( $theme-primary, .9 );
