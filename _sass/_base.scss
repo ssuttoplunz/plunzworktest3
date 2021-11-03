@@ -15,7 +15,7 @@ hr {
 }
 
 hr.light {
-    border-color: white;
+    border-color: rgb(0, 0, 0);
 }
 
 a {
@@ -49,11 +49,11 @@ p {
 
 .bg-dark {
     background-color: $theme-dark;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba(rgb(0, 0, 0), .7);
 }
 
 section {
