@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-    border-color: $theme-primary;
+    border-color: $theme-dark;
     border-width: 3px;
     max-width: 50px;
 }
@@ -20,10 +20,10 @@ hr.light {
 
 a {
     @include transition-all;
-    color: $theme-primary;
+    color: $theme-dark;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken($theme-dark, 10%);
     }
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: $theme-hark;
 }
 
 .bg-dark {
